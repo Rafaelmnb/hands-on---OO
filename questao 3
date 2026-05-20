@@ -1,0 +1,26 @@
+import java.util.HashSet;
+
+public class Main {
+    public static void main(String[] args) {
+
+        HashSet<String> alunos = new HashSet<>();
+
+       
+        alunos.add("Ana");
+        alunos.add("Carlos");
+        alunos.add("Maria");
+        alunos.add("Ana");
+        alunos.add("João");
+        alunos.add("Carlos");
+
+        
+        System.out.println("Alunos presentes:");
+
+        for (String aluno : alunos) {
+            System.out.println("- " + aluno);
+        }
+
+      
+        System.out.println("\nQuantidade de alunos presentes: " + alunos.size());
+    }
+}
